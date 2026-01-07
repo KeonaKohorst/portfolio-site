@@ -61,7 +61,7 @@ export const Banner = () => {
 
                                         <span className="tagline">Welcome to my Portfolio</span>
                                         <h1>{`Hi I'm Keona Gagnier `}<span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software Design & Development", "Database & Big Data Management", "Information Systems Analyst" ]'><span className="wrap">{text}</span></span></h1>
-                                        <p>I recently graduated from the Bachelor of Computer Information Systems program at Okanagan College.</p>
+                                        <p>I’m a Computer Information Systems graduate with a strong interest in how well-designed systems support real people, processes, and decisions.</p>
                                         <a href="#connect"><button>Let's connect <ArrowRightCircle size={25}/></button></a>
 
                                     </div>

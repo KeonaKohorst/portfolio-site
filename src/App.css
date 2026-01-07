@@ -84,7 +84,7 @@ p.success {
 }
 
 p.danger {
-	color: red;
+	color: rgb(190, 3, 3);
 }
 
 /* -------------- Nav Bar CSS ---------------- */
@@ -525,6 +525,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-size: 45px;
 	font-weight: 700;
   margin-bottom: 30px;
+  color: #3e383c;
 }
 .contact form input, .contact form textarea {
   width: 100%;
@@ -541,7 +542,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form input:focus, .contact form textarea:focus {
   background: #776871;
-  color: #a3a69d;
+  color: #ffffff;
 }
 .contact form input::placeholder, .contact form textarea::placeholder {
   font-size: 16px;
@@ -549,7 +550,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
 }
 .contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
-  color: #91A8A4;
+  color: #90ffeb;
   opacity: 0.8;
 }
 .contact form button {
@@ -583,4 +584,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+
+
+#status {
+  padding-top: 5px
 }
