@@ -17,6 +17,14 @@
 
 
 /* ------------------ Default CSS ----------------------- */
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +38,10 @@ html {
 
 body {
   font-weight: 400;
+
   overflow-x: hidden;
   position: relative;
-  background-color: #fff !important;
+  background-color: #F0F7EE !important;
   color: #121212 !important;
   font-family: 'Centra', sans-serif !important;
 }
@@ -68,12 +77,7 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
-	main .container {
-		max-width: 100%;
-		padding: 0 150px;
-	}
-}
+
 
 p.success {
 	color: green;
@@ -94,14 +98,14 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #FFF;
+  background-color: #AFDEDC;
 }
 nav.navbar a.navbar-brand {
     width: 9%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #121212 !important;
+  color: #2f292d !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -136,7 +140,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #AFDEDC;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -154,8 +158,8 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #121212;
-  border: 1px solid #121212;
+  color: #2f292d;
+  border: 1px solid #2f292d;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -171,7 +175,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #121212;
+  background-color: #2f292d;
   left: 0;
   top: 0;
   z-index: -1;
@@ -196,19 +200,19 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid #121212;
+  border-bottom: 2px solid #2f292d;
   transition: all 300ms linear;
   top: -2px;
 }
 nav.navbar .navbar-toggler-icon:focus {
-	border-bottom: 2px solid #121212;
+	border-bottom: 2px solid #2f292d;
 }
 nav.navbar .navbar-toggler-icon:after,
 nav.navbar .navbar-toggler-icon:before {
 	width: 24px;
 	position: absolute;
 	height: 2px;
-	background-color: #121212;
+	background-color: #2f292d;
 	top: 0;
 	left: 0;
 	content: '';
@@ -220,12 +224,12 @@ nav.navbar .navbar-toggler-icon:after {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
 	transform: rotate(45deg);
-	background-color: #121212;
+	background-color: #2f292d;
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 	transform: translateY(8px) rotate(-45deg);
-	background-color: #121212;
+	background-color: #2f292d;
 	height: 2px;
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
@@ -235,26 +239,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 
 /* -------------------- Banner Css --------------- */
+
 .banner {
+  
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  /* background-image: url('./assets/img/banner-bg.png'); */
+  padding: 260px 0 100px 0; /* You can keep your padding */
+  width: 100%;             /* Ensure it seeks 100% of the viewport */
+  display: block;          /* Ensure it behaves as a block-level element */
+  
+
+  background-color: #F0F7EE;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-/* For Desktop Devices */
-@media (min-width: 768px) {
-  .banner {
-    /* Top: 260px, Right: 50px (adjust as needed), Bottom: 100px, Left: 0 */
-    padding: 260px 50px 100px 150px; 
-  }
+  color: #2f292d;
 }
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(152, 198, 224, 0.5) -5.91%, rgba(93, 148, 105, 0.5) 111.58%);
+  /* background: linear-gradient(90.21deg, rgba(152, 198, 224, 0.5) -5.91%, rgba(93, 148, 105, 0.5) 111.58%); */
   border: 1px solid rgba(15, 5, 5, 0.5);
   font-size: 20px;
   margin-bottom: 16px;
@@ -269,14 +273,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: block;
 }
 .banner p {
-  color: #666666;
+  color: #4e4d4d;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   width: 96%;
 }
 .banner button {
-  color: #121212;
+  color: #2f292d;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -309,4 +313,274 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+
+
+
+
+
+
+/*------------------ Skills Css -------------------*/
+.skill {
+  padding: 0 0 50px 0;
+  position: relative;
+}
+.skill-bx {
+  background: #91A8A4 /*AFDEDC*/;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+.skill h2 {
+	font-size: 45px;
+	font-weight: 700;
+  color: #2f292d;
+}
+.skill p {
+    color: #2f292d;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
+}
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.item {
+  color: #2f292d;
+}
+
+.skill-slider .item img {
+  width: 50%;
+  margin: 0 auto 15px auto;
+}
+.background-image-left {
+  top: 28%;
+  position: absolute;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+.skill-bx .item img.skill-logo {
+  width: 50% !important; /* Adjust this percentage until it looks right */
+  max-width: 150px;      /* Prevents the logo from getting too big on huge screens */
+  margin: 0 auto 15px auto;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+
+/* -------------- Projects Css --------------*/
+.project {
+  padding: 80px 0;
+  position: relative;
+  background-color: #776871;
+}
+.project h2 {
+	font-size: 45px;
+	font-weight: 700;
+  text-align: center;
+  color: #AFDEDC;
+}
+.project p {
+  color: #ffffff;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px auto 30px auto;
+  text-align: center;
+  width: 56%;
+}
+.project .nav.nav-pills {
+  width: 72%;
+  margin: 0 auto;
+  border-radius: 50px;
+  background-color: rgb(255 255 255 / 10%);
+  overflow: hidden;
+}
+.project .nav.nav-pills .nav-item {
+  width: 33.33333%;
+}
+.project .nav.nav-pills .nav-link {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 17px 0;
+  color: #fff;
+  width: 100%;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  z-index: 0;
+}
+.project .nav.nav-pills .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background:#91A8A4;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.project .nav.nav-pills .nav-link.active::before {
+    width: 100% !important;
+}
+.project .nav.nav-pills .nav-link.active {
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.nav-link#projects-tabs-tab-first {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 55px 0px 0px 55px;
+}
+.nav-link#projects-tabs-tab-second {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+.nav-link#projects-tabs-tab-third {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 55px 55px 0;
+}
+.proj-imgbx {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.proj-imgbx::before {
+  content: "";
+  background:#466c9e88;
+  opacity: 0.85;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  transition: 0.4s ease-in-out;
+}
+.proj-imgbx:hover::before {
+  height: 100%;
+}
+.proj-txtx {
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  width: 100%;
+}
+.proj-imgbx:hover .proj-txtx {
+  top: 50%;
+  opacity: 1;
+}
+.proj-txtx h4 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1.1em;
+}
+.proj-txtx span {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.8px;
+}
+.background-image-right {
+  top: 20%;
+  position: absolute;
+  bottom: 0;
+  width: 35%;
+  right: 0;
+  z-index: -4;
+}
+
+
+
+
+
+
+/*-------------- Contact Form Css ------------------*/
+.contact {
+  background: #F0F7EE;
+  padding: 60px 0 200px 0;
+}
+.contact img {
+  width: 92%;
+}
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  background: #776871;
+  border: 1px solid #776871;
+  border-radius: 20px;
+  color: #fff;
+  margin: 0 0 8px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+.contact form input:focus, .contact form textarea:focus {
+  background: #776871;
+  color: #a3a69d;
+}
+.contact form input::placeholder, .contact form textarea::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.contact form input:focus::placeholder, .contact form textarea:focus::placeholder {
+  color: #91A8A4;
+  opacity: 0.8;
+}
+.contact form button {
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #91A8A4;
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 25px;
+  border-radius: 0;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+.contact form button span {
+  z-index: 1;
+  position: relative;
+}
+.contact form button:hover {
+  color: #fff;
+}
+.contact form button::before {
+  content: "";
+  background: #AFDEDC;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+}
+.contact form button:hover::before {
+  width: 100%;
 }

@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.svg';
 import linkedinicon from '../assets/img/linkedin-icon.svg';
-
+import { HashLink } from 'react-router-hash-link';
+// import {
+//   BrowserRouter as Router
+// } from "react-router-dom";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -31,7 +34,7 @@ export const NavBar = () => {
     }
 
     return (
-       
+ 
             <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
                 <Container>
                 <Navbar.Brand href="/">
@@ -48,17 +51,17 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                     <div className="social-icon">
-                        <a href="#"><img src={linkedinicon} alt="" /></a>
+                        <a href="https://www.linkedin.com/in/keona-gagnier/"><img src={linkedinicon} alt="" /></a>
                         {/* <a href="#"><img src={navIcon2} alt="" /></a>
                         <a href="#"><img src={navIcon3} alt="" /></a> */}
                     </div>
                     {/* <HashLink to='#connect'> */}
-                        <button className="vvd"><span>Let’s Connect</span></button>
+                        <a href="#connect"><button className="vvd"><span>Let’s Connect</span></button></a>
                     {/* </HashLink> */}
                     </span>
                 </Navbar.Collapse>
                 </Container>
             </Navbar>
-      
+   
     )
 }
